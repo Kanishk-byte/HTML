@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-Grid</title>
+    <style>
+        .container{
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 1fr 3fr 1fr;
+            /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+            /* grid-gap: 2rem;
+            grid-template-columns: repeat(4,auto); */
+
+        }
+        .box{
+            border: 2px solid black;
+            background-color: yellow;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+        .innerbox{
+            border: 2px solid green;
+            background-color: aqua;
+        }
+        input::placeholder{
+            color: brown;
+            text-align: center;
+        }
+        #Name{
+            height: 40px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box">
+            <div class="innerbox">
+                <input id="Name" type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="innerbox"></div>
+        </div>
+        <div class="box"></div>
+        <!-- <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div> -->
+    </div>
+</body>
+</html>
